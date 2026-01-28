@@ -1,0 +1,118 @@
+<?php
+
+function get_content() {
+    $about_us = dict_about_us('about-us');
+    $hero = $about_us['hero'];
+    $highlights = $about_us['highlights'];
+    $quality_policy = $about_us['quality-policy'];
+    $work_safety_policy = $about_us['work-safety-policy'];
+    $environmental_policy = $about_us['environmental-policy'];
+    ob_start(); ?>
+    
+    <section class="bg-gray-100">
+        <div class="relative">
+            <img src="/resources/images/banner_about_us.jpg" alt="<?php echo(dict('banner-background'))?>" class="w-full h-48 object-cover" />
+            <div class="absolute inset-0 flex items-center justify-center text-blue-900 text-center p-6">
+                <h1 class="text-6xl lg:text-3xl font-bold"><?php dict('about-us')?></h1>
+            </div>
+        </div>
+        
+        <!-- Intro -->
+        <div class="text-center border-2 rounded-lg border-b-gray-900 p-8 m-16 mt-8 bg-blue-950">
+            <p class="text-4xl lg:text-lg text-gray-200">
+            <?php echo($about_us['intro'])?>
+            </p>
+        </div>
+
+        <!-- Image + Description -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-16 mb-16">
+            <img src="<?php echo($hero['src'])?>" alt="<?php echo($hero['alt'])?>" class="rounded-lg shadow-lg h-128 w-full object-cover" />
+            <div>
+                <h2 class="text-4xl lg:text-2xl font-semibold text-blue-900 mb-4"><?php echo($hero['title'])?></h2>
+                <p class="text-gray-600 leading-relaxed text-3xl lg:text-lg">
+                    <?php echo($hero['p1'])?>
+                    <br /><br />
+                    <?php echo($hero['p2'])?>
+                    <br /><br />
+                    <?php echo($hero['p3'])?>
+                </p>
+            </div>
+        </div>
+
+        <!-- Quality Policy -->
+        <section class="px-16 pb-16">
+            <div class="flex w-full pb-16">
+                <div class="flex-1 bg-blue-900 my-4 rounded-lg"></div>
+                <h2 class="text-6xl lg:text-4xl font-bold text-center text-blue-900 px-8"><?php dict('quality-policy')?></h2>
+                <div class="flex-1 bg-blue-900 my-4 rounded-lg"></div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-16">
+                <ul class="col-span-2 p-6 bg-gray-50 rounded-lg shadow hover:shadow-lg transition">
+                    <li class="text-gray-600 text-3xl lg:text-lg py-3"><?php echo($quality_policy['points'][0])?></li>
+                    <li class="text-gray-600 text-3xl lg:text-lg py-3"><?php echo($quality_policy['points'][1])?></li>
+                    <li class="text-gray-600 text-3xl lg:text-lg py-3"><?php echo($quality_policy['points'][2])?></li>
+                    <li class="text-gray-600 text-3xl lg:text-lg py-3"><?php echo($quality_policy['points'][3])?></li>
+                    <li class="text-gray-600 text-3xl lg:text-lg py-3"><?php echo($quality_policy['points'][4])?></li>
+                    <li class="text-gray-600 text-3xl lg:text-lg py-3"><?php echo($quality_policy['points'][5])?></li>
+                    <li class="text-gray-600 text-3xl lg:text-lg py-3"><?php echo($quality_policy['points'][6])?></li>
+                </ul>
+                <div class="col-span-1 h-full rounded-lg">
+                    <img src="<?php echo($quality_policy['image']['src'])?>" alt="<?php echo($quality_policy['image']['alt'])?>" class="w-full h-full rounded-lg object-cover" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Health and Safety Policy -->
+        <section class="px-16 pb-16">
+            <div class="flex w-full pb-16">
+                <div class="flex-1 bg-blue-900 my-4 rounded-lg"></div>
+                <h2 class="text-4xl lg:text-4xl font-bold text-center text-blue-900 px-8"><?php dict('health-safety-policy')?></h2>
+                <div class="flex-1 bg-blue-900 my-4 rounded-lg"></div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-16">
+                <div class="col-span-1 h-full rounded-lg">
+                    <img src="<?php echo($work_safety_policy['image']['src'])?>" alt="<?php echo($work_safety_policy['image']['alt'])?>" class="w-full h-full rounded-lg object-cover" />
+                </div>
+                <ul class="col-span-2 p-6 bg-gray-50 rounded-lg shadow hover:shadow-lg transition">
+                    <li class="text-gray-600 text-3xl lg:text-lg py-3"><?php echo($work_safety_policy['points'][0])?></li>
+                    <li class="text-gray-600 text-3xl lg:text-lg py-3"><?php echo($work_safety_policy['points'][1])?></li>
+                    <li class="text-gray-600 text-3xl lg:text-lg py-3"><?php echo($work_safety_policy['points'][2])?></li>
+                    <li class="text-gray-600 text-3xl lg:text-lg py-3"><?php echo($work_safety_policy['points'][3])?></li>
+                    <li class="text-gray-600 text-3xl lg:text-lg py-3"><?php echo($work_safety_policy['points'][4])?></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Environmental Policy -->
+        <section class="px-16 pb-16">
+            <div class="flex w-full pb-16">
+                <div class="flex-1 bg-blue-900 my-4 rounded-lg"></div>
+                <h2 class="text-6xl lg:text-4xl font-bold text-center text-blue-900 px-8"><?php dict('environmental-policy')?></h2>
+                <div class="flex-1 bg-blue-900 my-4 rounded-lg"></div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-16">
+                <ul class="col-span-2 p-6 bg-gray-50 rounded-lg shadow hover:shadow-lg transition">
+                    <li class="text-gray-600 text-3xl lg:text-lg py-3"><?php echo($environmental_policy['points'][0])?></li>
+                    <li class="text-gray-600 text-3xl lg:text-lg py-3"><?php echo($environmental_policy['points'][1])?></li>
+                    <li class="text-gray-600 text-3xl lg:text-lg py-3"><?php echo($environmental_policy['points'][2])?></li>
+                    <li class="text-gray-600 text-3xl lg:text-lg py-3"><?php echo($environmental_policy['points'][3])?></li>
+                    <li class="text-gray-600 text-3xl lg:text-lg py-3"><?php echo($environmental_policy['points'][4])?></li>
+                    <li class="text-gray-600 text-3xl lg:text-lg py-3"><?php echo($environmental_policy['points'][5])?></li>
+                    <li class="text-gray-600 text-3xl lg:text-lg py-3"><?php echo($environmental_policy['points'][6])?></li>
+                    <li class="text-gray-600 text-3xl lg:text-lg py-3"><?php echo($environmental_policy['points'][7])?></li>
+                </ul>
+                <div class="col-span-1 h-full rounded-lg">
+                    <img src="<?php echo($environmental_policy['image']['src'])?>" alt="<?php echo($environmental_policy['image']['alt'])?>" class="w-full h-full rounded-lg object-cover" />
+                </div>
+            </div>
+        </section>
+    </section>
+    
+    <?php
+    return ob_get_clean();
+}
+
+?>
