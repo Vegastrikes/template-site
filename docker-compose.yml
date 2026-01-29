@@ -1,0 +1,6 @@
+services:
+  site:
+    build: .
+    container_name: template_site
+    ports:
+      - "8000:8000"

@@ -44,6 +44,8 @@ This project prioritizes:
 - (Optional) Node.js **18+** (only if you want to build/watch Tailwind)
 
 ### Run locally (PHP server)
+Mind the **globals.php** file which has a set value on:
+DOMAIN = "http://localhost:8000";
 
 From the project root:
 
@@ -56,3 +58,12 @@ Use tailwind CLI.
 npx @tailwindcss/cli -i ./css/main.css -o ./css/output.css --watch, is the current folder structure for the css.
 
 Run before every deployment.
+
+or
+
+#### Docker
+From the project root:
+
+````bash
+docker compose up -d
+````
