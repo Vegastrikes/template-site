@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const nav_button = document.querySelector('#mobile_navbar_button');
   const mobile_navbar = document.querySelector('#mobile_navbar');
   const popup_bg = document.querySelector('#popup_bg');
+  const popup_section_wrapper = document.querySelector('#popup_section_wrapper');
   const popup = document.querySelector('#popup');
 
   const popup_parent_languages = document.querySelector('#popup_parent_languages');
@@ -25,6 +26,12 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   
   popup_bg.addEventListener('click', () => {
+     mobile_navbar.classList.add('hidden');
+  });
+
+  popup.addEventListener('click', (e) => {
+   console.log(e.target);
+   if (popup_section_wrapper.contains(e.target)) return;
      mobile_navbar.classList.add('hidden');
   });
 

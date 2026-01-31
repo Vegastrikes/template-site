@@ -8,7 +8,7 @@
     'items' => [
         [
             'section' => 'product-group-1',
-            'local_link' => 'products/product_group_1',
+            'local_link' => 'products/product-group-1',
             'src' => '/resources/images/product_group_1.jpg',
             'alt' => 'Ürün Grubu 1',
         ],
