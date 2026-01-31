@@ -22,7 +22,7 @@ function get_content() {
     ob_start(); ?>
     
     <!-- Products -->
-    <div>
+    <div class="flex-1">
         <div class="relative">
             <img src="<?php echo($banner['src'])?>" alt="<?php echo($banner['alt'])?>" class="w-full h-36 object-cover" />
             <div class="absolute inset-0 bg-black/50 flex items-center justify-center text-white text-center p-6">

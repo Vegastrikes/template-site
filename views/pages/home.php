@@ -76,7 +76,7 @@ function get_content() {
 
     <script src="/js/carousel.js"></script>
     
-    <div>
+    <div class="flex-1">
         <!-- Hero Section -->
         <div class="relative overflow-hidden">
             <div id="home_hero_carousel" class="flex transition-transform duration-300 ease-out w-full">

@@ -4,7 +4,7 @@ function get_content() {
     $certificates = dict_about_us('certificates');
     ob_start(); ?>
     
-    <section>
+    <section class="flex-1">
       <div class="relative">
           <img src="/resources/images/banner_about_us.jpg" alt="<?php echo(dict('banner-background'))?>" class="w-full h-36 object-cover" />
           <div class="absolute inset-0 flex items-center justify-center text-blue-900 text-center p-6">

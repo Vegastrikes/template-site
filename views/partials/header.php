@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body class="h-full bg-gray-100">
+<body class="min-h-screen bg-gray-100 flex flex-col">
     <script>
         window.ISDESKTOP = <?php echo json_encode($GLOBALS['ISDESKTOP']);?>
     </script>

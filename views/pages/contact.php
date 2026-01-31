@@ -3,7 +3,7 @@
 function get_content() {
     ob_start(); ?>
     
-    <section class="bg-gray-100 pb-8">
+    <section class="flex-1">
         <div class="relative">
             <img src="/resources/images/banner_contact_us.jpg" alt="<?php echo(dict('banner-background'))?>" class="w-full h-48 object-cover" />
             <div class="absolute inset-0 bg-black/50 flex items-center justify-center text-white text-center p-6">
