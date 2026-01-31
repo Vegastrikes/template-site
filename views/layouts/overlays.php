@@ -20,7 +20,7 @@ ob_start();
         id="clickOverlayImage" 
         src="" 
         alt="" 
-        class="rounded-xl shadow-2xl transition-transform duration-300 h-192"
+        class="rounded-xl shadow-2xl transition-transform duration-300 h-96 lg:h-144 xl:h-208"
         draggable="false"
     />
 </div>

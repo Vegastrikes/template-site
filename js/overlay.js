@@ -46,20 +46,20 @@ document.addEventListener('DOMContentLoaded', () => {
       positionHoverOverlay();
 
       requestAnimationFrame(() => {
-        hoverOverlayImage.classList.add('scale-[1.6]');
+        hoverOverlayImage.classList.add('scale-[1.2]');
       });
     });
 
     hoverOverlayImage.addEventListener('mouseleave', () => {
       isHovered = false;
       activeImg = null;
-      hoverOverlayImage.classList.remove('scale-[1.6]');
+      hoverOverlayImage.classList.remove('scale-[1.2]');
       imageHoverOverlay.classList.add('hidden');
     });
 
     hoverOverlayImage.addEventListener('click', () => {
       isHovered = false;
-      hoverOverlayImage.classList.remove('scale-[1.6]');
+      hoverOverlayImage.classList.remove('scale-[1.2]');
       imageHoverOverlay.classList.add('hidden');
 
       positionClickOverlay();
