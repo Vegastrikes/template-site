@@ -30,7 +30,7 @@ function get_content() {
             </div>
         </div>
 
-        <nav class="grid grid-cols-1 lg:grid-cols-3 items-stretch gap-8 p-12 xl:gap-16 xl:px-24 xl:py-12">
+        <nav class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-stretch gap-8 p-12 xl:gap-16 xl:px-24 xl:py-12">
             <?php foreach ($items as $item): ?>
                 <?= get_item($item)?>
             <?php endforeach; ?>

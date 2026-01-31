@@ -59,7 +59,7 @@ function get_content() {
 
         <a href="<?php localized_link($arr['link']) ?>" class="mx-0 lg:p-0 border-3 border-blue-900/80 rounded-xl">
             <div class="group bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition hover:bg-blue-700 h-full">
-                <img src="<?php echo($arr['src'])?>" alt="<?php echo($arr['alt'])?>" class="w-full h-64 xl:h-96 object-cover" />
+                <img src="<?php echo($arr['src'])?>" alt="<?php echo($arr['alt'])?>" class="w-full h-64 sm:h-80 xl:h-96 object-cover" />
                 <div class="p-5">
                     <h3 class="text-lg font-semibold mb-2 group-hover:text-gray-200"><?php echo($arr['title'])?></h3>
                     <p class="text-gray-600 group-hover:text-white"><?php echo($arr['text'])?></p>

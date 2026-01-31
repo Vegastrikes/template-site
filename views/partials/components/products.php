@@ -45,7 +45,7 @@ function production_page($arr) {
                 </div>
     
                 <!-- Key Points -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-2 xl:gap-6 text-center pb-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-2 xl:gap-6 text-center pb-8">
                     <?php foreach ($key_points as $key_point): ?>
                         <?= production_key_points($key_point)?>
                     <?php endforeach; ?>
@@ -53,7 +53,7 @@ function production_page($arr) {
     
                 <!-- Features -->
                 <div class="pb-8 text-start">
-                    <ul class="grid grid-cols-2 lg:grid-cols-3 gap-2 xl:gap-6 text-gray-600">
+                    <ul class="grid grid-cols-2 sm:grid-cols-3 gap-2 xl:gap-6 text-gray-600">
                         <?php foreach ($features as $feature): ?>
                             <?= production_features($feature)?>
                         <?php endforeach; ?>
@@ -61,7 +61,7 @@ function production_page($arr) {
                 </div>
     
                 <!-- Images -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-4 lg:gap-6 xl:gap-8 text-blue-900 text-center">
+                <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 lg:gap-6 xl:gap-8 text-blue-900 text-center">
                     <?php foreach ($images as $image): ?>
                         <?= production_images($image)?>
                     <?php endforeach; ?>

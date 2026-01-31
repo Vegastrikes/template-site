@@ -27,7 +27,7 @@ function get_content() {
     
             <!-- Image + Description -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center mb-4 xl:mb-16">
-                <img src="<?php echo($hero['src'])?>" alt="<?php echo($hero['alt'])?>" class="rounded-lg shadow-lg w-full object-cover xl:h-128" />
+                <img src="<?php echo($hero['src'])?>" alt="<?php echo($hero['alt'])?>" class="rounded-lg shadow-lg w-full object-cover h-80 sm:h-128 lg:h-80 xl:h-128" />
                 <div class="lg:ml-2">
                     <h2 class="text-2xl font-semibold text-blue-900 mb-4"><?php echo($hero['title'])?></h2>
                     <p class="text-gray-600">
@@ -49,7 +49,7 @@ function get_content() {
                 </div>
     
                 <div class="grid grid-cols-3 gap-2 lg:gap-6 xl:gap-12">
-                    <ul class="col-span-2 p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition space-y-2 lg:space-y-4 text-sm xl:text-base">
+                    <ul class="col-span-2 p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition space-y-2 sm:space-y-4 text-sm xl:text-base">
                         <li class="text-gray-600"><?php echo($quality_policy['points'][0])?></li>
                         <li class="text-gray-600"><?php echo($quality_policy['points'][1])?></li>
                         <li class="text-gray-600"><?php echo($quality_policy['points'][2])?></li>
@@ -76,7 +76,7 @@ function get_content() {
                     <div class="col-span-1 h-full rounded-lg">
                         <img src="<?php echo($work_safety_policy['image']['src'])?>" alt="<?php echo($work_safety_policy['image']['alt'])?>" class="w-full h-full rounded-lg object-cover" />
                     </div>
-                    <ul class="col-span-2 p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition space-y-2 lg:space-y-4 text-sm xl:text-base">
+                    <ul class="col-span-2 p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition space-y-2 sm:space-y-4 text-sm xl:text-base">
                         <li class="text-gray-600"><?php echo($work_safety_policy['points'][0])?></li>
                         <li class="text-gray-600"><?php echo($work_safety_policy['points'][1])?></li>
                         <li class="text-gray-600"><?php echo($work_safety_policy['points'][2])?></li>
@@ -95,7 +95,7 @@ function get_content() {
                 </div>
     
                 <div class="grid grid-cols-3 gap-2 lg:gap-6 xl:gap-12">
-                    <ul class="col-span-2 p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition space-y-2 lg:space-y-4 text-sm xl:text-base">
+                    <ul class="col-span-2 p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition space-y-2 sm:space-y-4 text-sm xl:text-base">
                         <li class="text-gray-600"><?php echo($environmental_policy['points'][0])?></li>
                         <li class="text-gray-600"><?php echo($environmental_policy['points'][1])?></li>
                         <li class="text-gray-600"><?php echo($environmental_policy['points'][2])?></li>

@@ -3,10 +3,10 @@
     <!-- About / Logo -->
     <div>
       <?php if (!isset($GLOBALS['CURRENT_LANGUAGE']) || $GLOBALS['CURRENT_LANGUAGE'] == 'tr'): ?>
-        <img src="/resources/images/company_logo_tr.png" alt="Şirket Logosu">
+        <img src="/resources/images/company_logo_tr.png" alt="Şirket Logosu" class="h-36 sm:h-60 lg:h-36">
       <?php endif; ?>
       <?php if ($GLOBALS['CURRENT_LANGUAGE'] == 'en'): ?>
-        <img src="/resources/images/company_logo_en.png" alt="Company Logo">
+        <img src="/resources/images/company_logo_en.png" alt="Company Logo" class="h-36 sm:h-60 lg:h-36">
       <?php endif; ?>
       <div class="flex space-x-4 mt-4">
         <a href="" aria-label="Youtube" target="_blank" class="hover:text-white text-xl">
